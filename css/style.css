@@ -1,0 +1,344 @@
+*{
+  box-sizing: border-box;
+}
+*{
+  padding: 0;
+  margin:0;
+}
+html {
+  height: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+form.signIn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form.signUp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.block{
+  max-height: 550px;
+  padding: 50px;
+  display: flex;
+  width: 70%;
+  box-shadow: 0 0 40px #E2E4E9;
+  border-radius: 26px;
+}
+.rightSide{
+  width: 40%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+}
+.leftSide {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.signIn h4{
+  padding-top: 50px;
+}
+h4 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.imgBlock{
+  height: 430px;
+  background: url(../img/workingMan3.png) no-repeat;
+  background-size:contain;
+  background-position-x: center;
+  margin-bottom: 40px;
+}
+#signin-p{
+  font-size: 12px;
+  font-family: sans-serif;
+  color:#ACAEB0;
+  text-align: center;
+}
+.formBlock{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 115px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-width: 2px;
+  border-bottom-color: #E2E4E9;
+  background-color:transparent;
+  border-radius: 0;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+button {
+  padding: 11px 42px;
+  border-radius: 7px;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  background-color: #6EABE4;
+  color: #fff;
+}
+button:hover{
+  transition: .4s;
+  background-color: #4687BE;
+}
+button:active{
+  background-color: #116599;
+}
+span{
+  color:#116599;
+  cursor: pointer;
+  font-weight: 700;
+}
+span:hover{
+  color:#004576;
+}
+.loginwithanother {
+  display: flex;
+  align-items: center;
+}
+.loginwithanother p{
+  margin-right: 10px;
+}
+.face,.twitter,.google{
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.face{
+  background: url(../img/facebook.png)center no-repeat;
+  background-size: cover;
+}
+.twitter{
+  background:url(../img/twitter.png)center no-repeat;
+  background-size: cover;
+}
+.google{
+  background: url(../img/google.png)center no-repeat;
+  background-size: cover;
+}
+.display{
+  display:none;
+}
+.error{
+  border-bottom-color: red;
+}
+#demo{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 25px;
+  margin: 0;
+  color: red;
+  font-size: 13px;
+  width: 300px;
+  min-height: 40px;
+}
+.demoStyle{
+  content: '';
+  top: 10px;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url(../img/warning.png) center no-repeat;
+  background-size: contain;
+}
+.SignUpFormBlock{
+  position: relative;
+  margin-bottom:0px !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .imgBlock{
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+  }
+  .leftSide {
+    width: 50%;
+}
+.rightSide {
+  width: 50%;
+}
+.block {
+  width:75%;
+}
+@media only screen and (max-width: 1300px) {
+  .block {
+    width:80%;
+  }
+}
+#demo {
+  font-size: 12px;
+}
+}
+@media only screen and (max-width: 980px) {
+  .leftSide {
+    justify-content: center;
+  }
+  .imgBlock {
+  height: 350px;
+  }
+  input,#demo {
+    width: 300px;
+  }
+  button {
+    padding: 8px 35px;
+    font-size: 14px;
+  }
+  .block {
+    width:85%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  input,#demo {
+    width: 270px;
+  }
+  .block {
+    padding: 40px 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .block {
+    width: 90%;
+  }
+  input,#demo {
+    width: 250px;
+  }
+  #demo {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  input,#demo {
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 540px) {
+.imgBlock {
+  height: 250px;
+}
+h4 {
+  font-size: 26px;
+}
+input, #demo {
+  width: 200px;
+}
+input{
+  font-size: 12px;
+}
+#demo{
+  font-size: 10px;
+}
+button {
+  padding: 6px 29px;
+  font-size: 12px;
+} 
+p {
+  font-size: 13px;
+}
+.formBlock {
+  margin-bottom:40px;
+}
+.loginwithanother {
+  margin-bottom: 30px;
+}
+.face, .twitter, .google {
+  width: 20px;
+  height: 20px;
+}
+.signIn h4 {
+  padding-top: 0;
+}
+}
+@media only screen and (max-width: 500px) {
+  input, #demo {
+    width: 175px;
+  }
+  .demoStyle {
+    width: 15px;
+    height: 15px;
+  }
+  #demo {
+    padding: 10px 0 10px 22px;
+    min-height: 38px;
+  }
+  .block {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .formBlock {
+    margin-bottom:45px;
+  }
+  .imgBlock {
+    height: 200px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  input, #demo {
+    width: 165px;
+  }
+  input{
+    font-size: 10px;
+  }
+  #demo{
+    font-size: 9px;
+    min-height: 32px;
+  }
+  button {
+    padding: 4px 24px;
+    font-size: 10px;
+  }
+  #signin-p {
+    font-size: 8px;
+  }
+  .demoStyle {
+    width: 10px;
+    height: 10px;
+  }
+  #demo {
+    padding: 10px 0 10px 15px;
+  }
+  p {
+    font-size: 11px;
+}
+.loginwithanother p {
+  margin-right: 6px;
+}
+.face, .twitter, .google {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+}
+@media only screen and (max-width: 380px) {
+  input, #demo {
+    width: 150px;
+  }
+}

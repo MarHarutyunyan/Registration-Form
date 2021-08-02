@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SignIn Form</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+</head>
+
+<body>
+    <form action="" class="signIn" method="POST">
+        <div class="block">
+            <div class="leftSide">
+                <div class="imgBlock"></div>
+                <p id='signin-p'>Don't have an account? <span onclick="displaySignUp()">Sign Up</span></p>
+            </div>
+            <div class="rightSide">
+                <div class="textBlock">
+                    <h4>Sign In</h4>
+                </div>
+                <div class="formBlock">
+                    <p id="demo"></p>
+                    <div class="warning"></div>
+                    <input type="email" placeholder="E-mail" id="emailSign" name="email">
+                    <input type="password" placeholder="Password" id="passSign" name="password" minlength="8" required>
+                    <button type="button" id="myBtn" onclick="signIn()">Login</button>
+                </div>
+                <div class="loginwithanother">
+                    <p>Or login with</p>
+                    <a href="https://www.facebook.com/" target="_blank" class="face"></a>
+                    <a href="https://www.twitter.com/" target="_blank" class="twitter"></a>
+                    <a href="https://mail.google.com/" target="_blank" class="google"></a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="./js/jquery-3.6.0.slim.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

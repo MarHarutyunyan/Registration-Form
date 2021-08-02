@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SignUp Form</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+</head>
+
+<body>
+    <form action="" class="signUp" id="myForm" method="POST">
+        <div class="block">
+            <div class="leftSide">
+                <div class="imgBlock"></div>
+                <p id='signin-p'>Have an account? <span onclick="displaySignIn()">Sign In</span></p>
+            </div>
+            <div class="rightSide">
+                <div class="textBlock textSignUp">
+                    <h4>Sign Up</h4>
+                </div>
+                <div class="formBlock SignUpFormBlock">
+                    <p id="demo"></p>
+                    <div class="warning"></div>
+                    <input type="text" placeholder="Username" id="username" name="username">
+                    <input type="email" placeholder="E-mail" id="emailSign" name="email">
+                    <input type="password" placeholder="Password" id="passSign" name="password" minlength="8" required>
+                    <input type="password" placeholder="Confirm" id="confirm" name="password" minlength="8" required>
+                    <button id="myBtn" type="button" onclick="store()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="./js/jquery-3.6.0.slim.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
